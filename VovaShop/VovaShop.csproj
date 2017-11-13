@@ -72,12 +72,33 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Entities\BankCard.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\City.cs" />
+    <Compile Include="Entities\Country.cs" />
+    <Compile Include="Entities\EFContext.cs" />
+    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\Goods.cs" />
+    <Compile Include="Entities\OrderAddress.cs" />
+    <Compile Include="Entities\OrderStatus.cs" />
+    <Compile Include="Entities\RecycleBin.cs" />
+    <Compile Include="Entities\Role.cs" />
+    <Compile Include="Entities\Shop.cs" />
+    <Compile Include="Entities\StatusOrder.cs" />
+    <Compile Include="Entities\Storage.cs" />
+    <Compile Include="Entities\StorageAddress.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201711131504175_VovaShopMigration.cs" />
+    <Compile Include="Migrations\201711131504175_VovaShopMigration.Designer.cs">
+      <DependentUpon>201711131504175_VovaShopMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -91,6 +112,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201711131504175_VovaShopMigration.resx">
+      <DependentUpon>201711131504175_VovaShopMigration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -104,5 +128,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
